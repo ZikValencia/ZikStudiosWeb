@@ -2,7 +2,18 @@
 </script>
 
 <template>
-  <h1 class="text-9xl tes">
-    Hello world!
-  </h1>
+  <div class=" m-12 p-11 text-center">
+    <span class="text-9xl font-extrabold" >
+      Im a
+    </span>
+    <span class="text-9xl font-extrabold text-sky-600" >
+      Developer
+    </span>
+    <span class="text-9xl font-extrabold text-sky-200" >
+      Photographer
+    </span>
+    <span class="text-9xl font-extrabold  text-sky-800" >
+      Designer
+    </span>
+  </div>
 </template>
