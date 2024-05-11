@@ -1,33 +1,36 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import gsap from 'gsap';
-import { RoughEase } from "gsap/dist/EasePack";
-import { TextPlugin } from "gsap/dist/TextPlugin";
-
-gsap.registerPlugin(TextPlugin,RoughEase);
-
-const words = ref<Array<string>>(['developer', 'designer', 'photo editor'])
-onMounted(() => {
-  const blink = gsap.to('.cursor', {opacity:0, ease:'power2.inOut', repeat: -1, repeatDelay: 0.5})
-  let mainTimeLine = gsap.timeline({repeat: -1})
-  words.value.forEach(word => {
-    let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1})
-    tl.to('.text', {duration: 1, text: word})
-    mainTimeLine.add(tl)
-  });
-});
+import hero from '@/components/Hero.vue'
 
 </script>
 <template>
-  <div class="m-12 p-11 ">
-    <h1 class="relative inline-block">
-      <span class="box"></span>
-      <span class="text-7xl font-extrabold ">Hi I am Zik</span> <br>
-      <span class="text-7xl font-extrabold im">I'm a </span>
-      <span class="text-7xl font-extrabold text-sky-600 text">
+  <div class="">
+    <hero/>
+    <!-- Dev -->
+    <div class="m-12 p-11 flex justify-end">
+      <span class="text-5xl font-extrabold ">
+        You don't Believe me?!
+        <br/>
+        Heres what I can do.
       </span>
-      <span class="text-7xl font-extrabold text-white cursor">|</span>
-    </h1>
+      
+    </div>
+
+    <!-- Design -->
+    <div class="m-12 p-11">
+      <span class="text-5xl font-extrabold">
+        I Can also do this
+      </span><br/>
+    </div>
+
+    <!-- Photo Editing -->
+    <div class="m-12 p-11 flex justify-end">
+      <span class="text-5xl font-extrabold">
+        Hmm Hobbies? I work on it <span class="text-sky-600 font-extrabold">(Literally)</span>
+      </span><br/>
+    </div>
   </div>
 </template>
+
+
