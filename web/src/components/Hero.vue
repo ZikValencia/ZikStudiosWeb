@@ -4,6 +4,7 @@
     import gsap from 'gsap';
     import { RoughEase } from "gsap/dist/EasePack";
     import { TextPlugin } from "gsap/dist/TextPlugin";
+    import image from '@/assets/Self_portrait.png'
 
     gsap.registerPlugin(TextPlugin,RoughEase);
 
@@ -19,8 +20,8 @@
     });
 </script>
 <template>
-  <div class="m-12 p-11 ">
-    <h1 class="relative inline-block">
+  <div class="flex items-center min-w-max h-screen justify-between p-32">
+    <h1 class="relative inline-block flex-row">
       <span class="box"></span>
       <span class="text-7xl font-extrabold ">Hi I am Zik</span> <br>
       <span class="text-7xl font-extrabold im">I'm a </span>
@@ -28,5 +29,64 @@
       </span>
       <span class="text-7xl font-extrabold text-white cursor">|</span>
     </h1>
+    <div class="person">
+      <div class="container">
+        <div class="container-inner">
+          <img
+            class="circle"
+          />
+          <img
+            class="img img1" :src="image"
+          />
+        </div>
+      </div>
+    </div>
+
+    
   </div>
 </template>
+<style>
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.contianer{
+    background-color: none;
+}
+
+
+
+.container-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -200px;
+}
+.circle {
+  background-color: #fee7d3;
+  border-radius: 50%;
+  height: 380px;
+  left: 10px;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 100px;
+  width: 340px;
+}
+</style>
