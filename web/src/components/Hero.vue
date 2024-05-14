@@ -20,16 +20,18 @@
     });
 </script>
 <template>
-  <div class="flex items-center min-w-max h-screen justify-between p-32">
-    <h1 class="relative inline-block flex-row">
+  <div class="flex items-start h-screen justify-center p-10 flex-wrap" style="margin-top: 20vh;">
+    <h1 class="relative inline-block flex-row sm:w-screen sm:pl-52 xl:w-1/2" style="min-width: 50vw; margin-top: 50px;">
       <span class="box"></span>
-      <span class="text-7xl font-extrabold ">Hi I am Zik</span> <br>
+      <span class="text-7xl sm:text-3xl font-extrabold ">Hi I am Zik</span> <br>
       <span class="text-7xl font-extrabold im">I'm a </span>
       <span class="text-7xl font-extrabold text-sky-600 text">
-      </span>
-      <span class="text-7xl font-extrabold text-white cursor">|</span>
+      </span>   
+      
+      <span class="text-7xl font-extrabold text-white cursor">|</span><br>
+      <span class="text-2xl font-extrabold italic mt-5">My site is still under creative development</span> <br>
     </h1>
-    <div class="person">
+    <div class="person" >
       <div class="container">
         <div class="container-inner">
           <img
