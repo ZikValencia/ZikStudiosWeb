@@ -23,7 +23,7 @@
   <div class="flex items-start h-screen justify-center p-10 flex-wrap" style="margin-top: 20vh;">
     <h1 class="relative inline-block flex-row sm:w-screen sm:pl-52 xl:w-1/2" style="min-width: 50vw; margin-top: 50px;">
       <span class="box"></span>
-      <span class="text-7xl sm:text-3xl font-extrabold ">Hi I am Zik</span> <br>
+      <span class="text-7xl sm:text-base font-extrabold ">Hi I am Zik</span> <br>
       <span class="text-7xl font-extrabold im">I'm a </span>
       <span class="text-7xl font-extrabold text-sky-600 text">
       </span>   
