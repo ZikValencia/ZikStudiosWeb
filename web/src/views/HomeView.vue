@@ -18,39 +18,17 @@ import hero from '@/components/Hero.vue'
         </div>
       </div>
 
-      <p class="text-xl font-bold p-10 ">Hello, I’m Zik, a passionate Filipino web developer dedicated to bringing ideas to life in the digital realm.<br>
-        In everyday life, I’m known as Exequiel (Hard to read right?), but I prefer to be called Zik.
-      </p>
-
       <p class="text-xl font-bold p-10 ">
-        I graduated with a Bachelor's degree in Information Technology from Silliman University in the Philippines.
+        Hello! I'm a passionate Filipino web developer dedicated to bringing ideas to life in the digital realm. <br />
+        With a keen eye for detail and a drive for perfection, I strive to create websites that are not only functional <br />
+         but also visually appealing and user-friendly. When I'm not coding, you'll likely find me behind a camera. <br />
+         I have a deep passion for photography and enjoy capturing core memories, making good memories even better <br />
+         through thoughtful editing and creative enhancements. 
       </p>
-
-      <p class="text-xl font-bold p-10 ">
-        After graduating, I launched my career journey at Perti Solutions Ca as a technical consultant, a role I held from [start year] to [end year].
-      </p>
-
-      <p class="text-xl font-bold p-10 ">
-        Currently, I work at Mobile Internet Technology .co .ltd in Japan as a mobile apps and software developer.
-      </p>
-
-      
     </div>
 
-    <!-- Design 
-    <div class="m-12 p-11">
-      <span class="text-5xl font-extrabold">
-        I Can also do this
-      </span><br/>
+    
     </div>
-
-    <!-- Photo Editing 
-    <div class="m-12 p-11 flex justify-end">
-      <span class="text-5xl font-extrabold">
-        Hmm Hobbies? I work on it <span class="text-sky-600 font-extrabold">(Literally)</span>
-      </span><br/>
-    </div> -->
-  </div>
 </template>
 
 
